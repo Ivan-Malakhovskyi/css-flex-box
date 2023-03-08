@@ -1,0 +1,286 @@
+/* ---------Стилі для index.html ---------------*/
+
+:root {
+  --main-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --main-bgrnd-color: #ffffff;
+  --additional-background-color: #f4f4fd;
+  --accent-page-color: #404bbf;
+  --footer-text-color: #e7e9fc;
+}
+body {
+  color: var(--main-text-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.body .body {
+  color: var(--main-text-color);
+  background-color: var(--main-bgrnd-color);
+}
+/*-------------- Логотип компанії ------------*/
+
+.list {
+  list-style: none;
+}
+
+/* Шрифти */
+
+/* Logo  Web та Studio */
+
+.link-logo,
+.link-header-studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.link-logo {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.item-list {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.navigation .link-logo {
+  color: var(--accent-color);
+}
+
+.site-nav .link-logo-item {
+  color: var(--accent-color);
+}
+
+.link-header-studio,
+.link-logo-item {
+  color: var(--title-text-color);
+}
+
+/* .navigation .site-nav .item-list.current {
+  color: var(--accent-page-color);
+} */
+/* ----------------Навігація---------------- */
+.navigation {
+  color: var(--title-text-color);
+}
+.site-nav,
+.link-contact,
+.link.current {
+  color: var(--accent-page-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.site-nav .link .item-list.current {
+  color: var(--title-text-color);
+}
+.navigation .site-nav .link.current {
+  color: var(--accent-color);
+}
+.adress-list .link-contact {
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none;
+  font-style: normal;
+}
+.adress-list {
+  font-style: normal;
+}
+
+.site-nav .item-list {
+  color: var(--title-text-color);
+}
+.site-nav .item-list {
+  text-decoration: none;
+}
+.item-list:hover,
+.item-list:focus {
+  color: var(--accent-page-color);
+}
+
+/*---------------- Contacts--------------- */
+.contact .link-contact {
+  color: var(--main-text-color);
+}
+.contact .link-contact:hover,
+.contact .link-contact:focus {
+  color: var(--accent-page-color);
+}
+/* --------------Main ---------*/
+/* -----------Hero--------- */
+.hero,
+.hero-title {
+  color: var(--main-bgrnd-color);
+  background-color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* -------------------Button-------------- */
+.button-hero {
+  color: var(--main-bgrnd-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  width: 169px;
+  height: 56px;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--accent-page-color);
+}
+/* ----------------SECTION 2 -переваги  */
+.section .section-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.section-text {
+  color: var(--main-text-color);
+  letter-spacing: 0.02em;
+}
+/* section-subject */
+.section {
+  color: var(--title-text-color);
+}
+.section-subject {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* ----------------Team----------- */
+.team {
+  background-color: var(--additional-background-color);
+}
+
+.section .section-caption {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.main-text {
+  color: var(--main-text-color);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/*-------- Стилі для portfolio.html--------- */
+
+.section-item .list {
+  color: var(--main-bgrnd-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  width: 126px;
+  height: 48px;
+  border: 1px soli var(--footer-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* -----------------Buttons------------ */
+.button-hero:hover,
+.button-hero:focus {
+  background-color: var(--accent-page-color);
+}
+.btn-item {
+  color: var(--accent-color);
+  background-color: var(--additional-background-color);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+}
+.btn-item:hover,
+.btn-item:focus {
+  color: var(--main-bgrnd-color);
+  background-color: var(--accent-page-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.list {
+  list-style: none;
+}
+
+.item-list {
+  text-decoration: none;
+}
+
+.portfolio-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.portfolio-list .portfolio-text {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/*------------------ Footer ---------------*/
+.footer {
+  background-color: var(--title-text-color);
+}
+.footer .link-footer {
+  font-family: "Raleway", sans-serif;
+  color: var(--accent-color);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-studio {
+  color: var(--additional-background-color);
+}
+
+.footer .footer-text {
+  color: var(--footer-text-color);
+
+  letter-spacing: 0.02em;
+}
+.link-logo {
+  text-decoration: none;
+}
