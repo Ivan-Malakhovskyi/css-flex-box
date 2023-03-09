@@ -4,179 +4,202 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css
+
+
+
+"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
     <!-- Шапка сайту -->
-    <header>
-      <nav class="navigation">
-        <a href="./index.html" class="link-logo item link"
-          >Web<span class="link-header-studio">Studio</span></a
-        >
-        <ul class="site-nav list link">
-          <li>
-            <a href="./index.html" class="item-list link current">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="item-list link">Portfolio</a>
-          </li>
-          <li><a href="" class="item-list link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="adress-list">
-        <ul class="contact list">
-          <li>
-            <a class="link-contact link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="link-contact link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header class="page-header">
+      <div class="container">
+        <nav class="navigation">
+          <a href="./index.html" class="link-logo item link"
+            >Web<span class="link-header-studio">Studio</span></a
+          >
+          <ul class="site-nav list link">
+            <li>
+              <a href="./index.html" class="item-list link current">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="item-list link">Portfolio</a>
+            </li>
+            <li><a href="" class="item-list link">Contacts</a></li>
+          </ul>
+        </nav>
+        <!-- <div class="container contacts"> -->
+        <address class="adress-list">
+          <ul class="contact list">
+            <li>
+              <a class="link-contact link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="link-contact link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <!-- </div> -->
+      </div>
     </header>
     <main>
       <!-- Герой -->
       <section class="hero">
-        <h1 class="hero-title">
-          Effective Solutions <br />
-          for Your Business
-        </h1>
-        <button class="button-hero" type="button">Order Service</button>
+        <div class="container">
+          <h1 class="hero-title">
+            Effective Solutions <br />
+            for Your Business
+          </h1>
+          <button class="button-hero" type="button">Order Service</button>
+        </div>
       </section>
+
       <!-- Переваги веб-студуії -->
       <section class="section">
-        <h2 class="section-title">List of features</h2>
-        <ul class="section-list list">
-          <li>
-            <h3 class="section-title">Strategy</h3>
-            <p class="section-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
+        <div class="container">
+          <h2 class="section-title">List of features</h2>
+          <ul class="section-list list">
+            <li>
+              <h3 class="section-title">Strategy</h3>
+              <p class="section-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
 
-          <li>
-            <h3 class="section-title">Punctuality</h3>
-            <p class="section-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title">Diligence</h3>
-            <p class="section-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
-          <li>
-            <h3 class="section-title">Technologies</h3>
-            <p class="section-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
+            <li>
+              <h3 class="section-title">Punctuality</h3>
+              <p class="section-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
+            <li>
+              <h3 class="section-title">Diligence</h3>
+              <p class="section-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
+            <li>
+              <h3 class="section-title">Technologies</h3>
+              <p class="section-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="section">
-        <h2 class="section-subject">What are we doing</h2>
-        <ul class="devices list">
-          <li>
-            <img
-              src="./images/Rectangle3-min.jpg"
-              width="360"
-              height="300"
-              alt="PC"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/Rectangle1-min.jpg"
-              width="360"
-              height="300"
-              alt="program-windows-are-open"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/Rectangle2-min.jpg"
-              width="360"
-              height="300"
-              alt="smartphone"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="section-subject">What are we doing</h2>
+          <ul class="devices list">
+            <li>
+              <img
+                src="./images/Rectangle3-min.jpg"
+                width="360"
+                height="300"
+                alt="PC"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/Rectangle1-min.jpg"
+                width="360"
+                height="300"
+                alt="program-windows-are-open"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/Rectangle2-min.jpg"
+                width="360"
+                height="300"
+                alt="smartphone"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Команда веб-студії -->
       <section class="section team">
-        <h2 class="section-subject">Our Team</h2>
-        <ul class="members ream list">
-          <li>
-            <img
-              src="./images/img-min.jpg"
-              width="264"
-              height="260"
-              alt="photo by Mark Guerrero"
-            />
-            <h3 class="section-caption">Mark Guerrero</h3>
-            <p class="main-text">Product Designer</p>
-          </li>
+        <div class="container">
+          <h2 class="section-subject">Our Team</h2>
+          <ul class="members ream list">
+            <li>
+              <img
+                src="./images/img-min.jpg"
+                width="264"
+                height="260"
+                alt="photo by Mark Guerrero"
+              />
+              <h3 class="section-caption">Mark Guerrero</h3>
+              <p class="main-text">Product Designer</p>
+            </li>
 
-          <li>
-            <img
-              src="./images/img_1.1-min.jpg"
-              width="264"
-              height="260"
-              alt="photo by Tom Ford"
-            />
-            <h3 class="section-caption">Tom Ford</h3>
-            <p class="main-text">Frontend Developer</p>
-          </li>
+            <li>
+              <img
+                src="./images/img_1.1-min.jpg"
+                width="264"
+                height="260"
+                alt="photo by Tom Ford"
+              />
+              <h3 class="section-caption">Tom Ford</h3>
+              <p class="main-text">Frontend Developer</p>
+            </li>
 
-          <li>
-            <img
-              src="./images/img_1.2-min.jpg"
-              width="264"
-              height="260"
-              alt="photo by Camila Garcia"
-            />
-            <h3 class="section-caption">Camila Garcia</h3>
-            <p class="main-text">Marketing</p>
-          </li>
+            <li>
+              <img
+                src="./images/img_1.2-min.jpg"
+                width="264"
+                height="260"
+                alt="photo by Camila Garcia"
+              />
+              <h3 class="section-caption">Camila Garcia</h3>
+              <p class="main-text">Marketing</p>
+            </li>
 
-          <li>
-            <img
-              src="./images/img_1.3-min.jpg"
-              width="264"
-              alt="photo by Daniel Wilson"
-            />
-            <h3 class="section-caption">Daniel Wilson</h3>
-            <p class="main-text">UI Designer</p>
-          </li>
-        </ul>
+            <li>
+              <img
+                src="./images/img_1.3-min.jpg"
+                width="264"
+                alt="photo by Daniel Wilson"
+              />
+              <h3 class="section-caption">Daniel Wilson</h3>
+              <p class="main-text">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Футер -->
     <footer class="footer studio">
-      <a class="link-footer link ftr" href="./index.html"
-        >Web<span class="footer-studio">Studio</span></a
-      >
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="container">
+        <a class="link-footer link ftr" href="./index.html"
+          >Web<span class="footer-studio">Studio</span></a
+        >
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

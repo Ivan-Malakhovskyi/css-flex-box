@@ -1,5 +1,22 @@
 /* ---------Стилі для index.html ---------------*/
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.container {
+  width: 1152px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: 2px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root {
   --main-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -10,6 +27,7 @@
   --footer-text-color: #e7e9fc;
 }
 body {
+  margin: 0 auto;
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -23,6 +41,8 @@ body {
 /*-------------- Логотип компанії ------------*/
 
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -105,6 +125,10 @@ body {
 }
 
 /*---------------- Contacts--------------- */
+.contacts {
+  padding: 0;
+  width: auto;
+}
 .contact .link-contact {
   color: var(--main-text-color);
 }
@@ -116,6 +140,8 @@ body {
 /* -----------Hero--------- */
 .hero,
 .hero-title {
+  margin-top: 0;
+
   color: var(--main-bgrnd-color);
   background-color: var(--title-text-color);
   font-weight: 700;
@@ -131,13 +157,15 @@ body {
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 500;
-  width: 169px;
-  height: 56px;
+
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  border: 1px solid transparent;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -221,6 +249,9 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 24px;
+  border: 1px solid var(--footer-text-color);
 }
 .link {
   text-decoration: none;
@@ -234,6 +265,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border: 1px solid transparent;
 }
 .list {
   list-style: none;
