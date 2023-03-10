@@ -9,9 +9,9 @@ html {
   box-sizing: inherit;
 }
 .container {
-  width: 1152px;
-  padding-left: 12px;
-  padding-right: 12px;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
   outline: 2px solid tomato;
   margin-left: auto;
   margin-right: auto;
@@ -28,6 +28,7 @@ html {
 }
 body {
   margin: 0 auto;
+
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -38,8 +39,12 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-bgrnd-color);
 }
-/*-------------- Логотип компанії ------------*/
 
+/*------------------------ Header----------------------- */
+/*-------------- Логотип компанії ------------*/
+.page-header {
+  border-bottom: 1px solid var(--footer-text-color);
+}
 .list {
   padding: 0;
   margin: 0;
@@ -57,6 +62,7 @@ body {
   font-size: 18px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+
   text-transform: uppercase;
 }
 .link-logo {
@@ -75,9 +81,44 @@ body {
   color: var(--accent-color);
 }
 
+/*-------------------- Main nav----------------- */
+.main-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item + .item {
+  margin-left: 40px;
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .link-header-studio,
 .link-logo-item {
   color: var(--title-text-color);
+}
+/* -----------------------Contacts------------------------- */
+.main-address {
+  display: flex;
+}
+
+.contact {
+  display: flex;
+}
+.contact .contacts + .contacts {
+  margin-left: 40px;
+}
+.contact .contacts {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* .navigation .site-nav .item-list.current {
@@ -138,33 +179,42 @@ body {
 }
 /* --------------Main ---------*/
 /* -----------Hero--------- */
-.hero,
+
 .hero-title {
-  margin-top: 0;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  max-width: 496px;
 
   color: var(--main-bgrnd-color);
-  background-color: var(--title-text-color);
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
+}
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
+
+  background-color: var(--title-text-color);
 }
 
 /* -------------------Button-------------- */
 .button-hero {
+  padding: 16px 32px;
+  min-width: 169px;
+
   color: var(--main-bgrnd-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 500;
-
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 32px;
+
   border: 1px solid transparent;
 }
 .button-hero:hover,
@@ -172,22 +222,41 @@ body {
   background-color: var(--accent-page-color);
 }
 /* ----------------SECTION 2 -переваги  */
-.section .section-title {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
+
+.section-title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
+.section-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
 .section-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--main-text-color);
   letter-spacing: 0.02em;
 }
 /* section-subject */
 .section {
   color: var(--title-text-color);
+  padding-top: 120px;
 }
+
 .section-subject {
+  margin-top: 0;
+  margin-bottom: 72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -202,6 +271,9 @@ body {
 }
 
 .section .section-caption {
+  margin-top: 32px;
+  margin-bottom: 8px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 20px;
@@ -209,6 +281,9 @@ body {
   letter-spacing: 0.02em;
 }
 .main-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+
   color: var(--main-text-color);
   font-weight: 400;
   letter-spacing: 0.02em;
@@ -219,6 +294,7 @@ body {
 .section-item .list {
   color: var(--main-bgrnd-color);
   background-color: var(--accent-color);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -227,7 +303,7 @@ body {
   letter-spacing: 0.04em;
   width: 126px;
   height: 48px;
-  border: 1px soli var(--footer-text-color);
+  border: 1px solid var(--footer-text-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -238,6 +314,8 @@ body {
   background-color: var(--accent-page-color);
 }
 .btn-item {
+  padding: 12px 24px;
+
   color: var(--accent-color);
   background-color: var(--additional-background-color);
   border-radius: 4px;
@@ -250,7 +328,6 @@ body {
   letter-spacing: 0.04em;
   cursor: pointer;
   border-radius: 4px;
-  padding: 12px 24px;
   border: 1px solid var(--footer-text-color);
 }
 .link {
@@ -303,16 +380,22 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-
+.footer-logo .link-footer {
+  display: block;
+  margin-bottom: 16px;
+}
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+}
 .footer-studio {
   color: var(--additional-background-color);
 }
 
 .footer .footer-text {
   color: var(--footer-text-color);
-
   letter-spacing: 0.02em;
-}
-.link-logo {
-  text-decoration: none;
+  max-width: 264px;
+  margin: 0;
 }
