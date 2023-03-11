@@ -302,6 +302,10 @@ img {
   color: var(--title-text-color);
   padding-top: 120px;
 }
+.section-sec {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .section-subject {
   margin-top: 0;
@@ -316,7 +320,7 @@ img {
 }
 
 /* ----------------Team----------- */
-.section {
+.section .team {
   padding-bottom: 120px;
 }
 
@@ -408,6 +412,7 @@ img {
 }
 
 /* -----------------Buttons------------ */
+
 .section-btn-list {
   padding-bottom: 120px;
   padding-top: 96px;
@@ -418,6 +423,10 @@ img {
   justify-content: center;
   align-items: center;
 }
+.main-btn-list .btn-item + .btn-item {
+  margin-right: 12px;
+}
+
 .section-item {
   padding-bottom: 72px;
 }
