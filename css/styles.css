@@ -12,7 +12,7 @@ html {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -364,14 +364,16 @@ img {
 }
 /*-------- Стилі для portfolio.html--------- */
 
+/* Елемент */
 .list-img {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-.portfolio-item {
-  width: 360px;
-  margin-right: 24px;
-  margin-bottom: 48px;
+
+.list-img > .portfolio-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
 .set-card {
@@ -380,6 +382,12 @@ img {
   border-top: none;
 }
 
+/* .portfolio-item {
+  width: 360px;
+  margin-right: 24px;
+  margin-bottom: 48px;
+/* } */
+
 .portfolio-text {
   margin-top: 8px;
 }
@@ -387,12 +395,12 @@ img {
   padding: 32px 16px;
 }
 
-.portfolio-item:nth-child(3n) {
+/* .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
 .portfolio-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
+} */
 
 .section-item .list {
   color: var(--main-bgrnd-color);
@@ -423,8 +431,9 @@ img {
   justify-content: center;
   align-items: center;
 }
-.main-btn-list .btn-item + .btn-item {
-  margin-right: 12px;
+
+.main-btn-list .portfolio-btn + .portfolio-btn {
+  margin-left: 12px;
 }
 
 .section-item {
